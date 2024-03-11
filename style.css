@@ -1,0 +1,292 @@
+.app {
+    opacity: 0;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Times New Roman', Times, serif
+}
+
+body {
+    background: cover;
+    background-position: center;
+    background: url(Bank/back1.jpg);
+}
+
+.heading h2 {
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-decoration: ;
+    text-decoration: underline rgb(97, 0, 32);
+}
+
+p {
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.login__btn,
+.btn--sort {
+    padding: 12px 40px;
+    background: rgb(13, 81, 0);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.formbtn {
+    padding: 12px 40px;
+    background: rgb(13, 81, 0);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 10px 27% 0 27%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* //////////////////////////////  header  //////////////////////////////// */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(87, 0, 46);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 70%);
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    color: azure;
+}
+
+.header img {
+    width: 180px;
+    margin-bottom: -12px;
+}
+
+.header p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header form input[type="text"],
+form input[type="password"] {
+    max-width: 100%;
+    position: relative;
+    width: 200px;
+    padding: 12px 15px;
+    background: #f3f3f3;
+    border: none;
+    outline: none;
+    margin: 15px 0;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* //////////////////////////////  header  //////////////////////////////// */
+
+
+/* //////////////////////////////  footer  //////////////////////////////// */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background-color: rgb(87, 0, 46);
+    /* box-shadow: 0px 0px 10px rgb(0 0 0 / 40%); */
+    color: azure;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+
+/* //////////////////////////////  footer  //////////////////////////////// */
+
+
+/* //////////////////////////////  balance  //////////////////////////////// */
+
+.balance {
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    right: 20%;
+    width: 60%;
+    height: 10%;
+    background: rgb(0, 0, 97);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+    color: #ffffff;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.balance p {
+    font-size: 30px;
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+
+/* //////////////////////////////  balance  //////////////////////////////// */
+
+
+/* //////////////////////////////  leftcol  //////////////////////////////// */
+
+.left-column {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 44%;
+    height: 59.3%;
+    background-color: rgb(232, 232, 232);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.movcol {
+    display: inline-flex;
+    justify-content: space-around;
+    margin: -150px 0 0 0;
+}
+
+
+/* //////////////////////////////  leftcol  //////////////////////////////// */
+
+
+/* //////////////////////////////  rightcol  //////////////////////////////// */
+
+.right-column {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    width: 45%;
+    height: 60%;
+}
+
+
+/* //////////////////////////////  rightcol  //////////////////////////////// */
+
+
+/* //////////////////////////////  right box1  //////////////////////////////// */
+
+.box1 {
+    height: 48.5%;
+    background-color: rgb(232, 232, 232);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* padding: 0 5%; */
+}
+
+.box1 .sum {
+    display: inline-flex;
+    justify-content: space-around;
+    margin: -30px 25px 0 25px;
+}
+
+
+/* //////////////////////////////  right box1  //////////////////////////////// */
+
+
+/* //////////////////////////////  right box2  //////////////////////////////// */
+
+.box2 {
+    height: 48.5%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+.box2 .inner-box {
+    width: 48%;
+    background-color: rgb(139, 206, 228);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.box2 .inner-box form {
+    margin: -38px 25px 0 25px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+}
+
+.box2 .inner-box form input[type="text"],
+.inner-box form input[type="number"] {
+    position: relative;
+    width: 150px;
+    padding: 10px 15px;
+    background: #f3f3f3;
+    border: none;
+    outline: none;
+    margin: 8px 0 0 10px;
+    border-radius: 10px;
+}
+
+
+/* //////////////////////////////  right box2  //////////////////////////////// */
+
+
+/* //////////////////////////////  bottom //////////////////////////////// */
+
+.bottom-row {
+    position: absolute;
+    bottom: 7%;
+    left: 25%;
+    right: 25%;
+    width: 47%;
+    height: 7%;
+    background-color: rgb(47, 47, 47);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    color: #ffffff;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-row form input[type="text"],
+form input[type="number"] {
+    max-width: 100%;
+    position: relative;
+    width: 200px;
+    padding: 12px 15px;
+    background: #f3f3f3;
+    border: none;
+    outline: none;
+    margin: 13px 0;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* //////////////////////////////  bottom //////////////////////////////// */

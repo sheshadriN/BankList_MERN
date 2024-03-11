@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>CheckBank</title>
+
+
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="Bank - Copy/bank.png" alt="Logo" class="logo" />
+        <p class="welcome">Welcome, Log in to get started!</p>
+        <form class="login">
+            <input type="text" placeholder="Username" class="logininput logininput--user" />
+            <input type="password" placeholder="Account PIN" maxlength="4" class="logininput logininput--pin" />
+            <button class="login__btn">&rarr;</button>
+        </form>
+    </div>
+    <main class="app">
+        <div class="balance">
+            <p class="balance__label">Current Balance as of</p>
+            <p class="balance__date"><span class="date">05-03-2037</span></p>
+            <p class="balance__value">0000 €</p>
+        </div>
+        <div class="left-column">
+            <div class="heading">
+                <h2>Transactions</h2>
+            </div><br>
+            <div class="movcol">
+                <div class="movements__row">
+                    <div class="movementstype movementstype--deposit">0 deposit</div>
+                    <div class="movements__date"></div>
+                    <div class="movements__value">0000€</div>
+                </div>
+                <div class="movements__row">
+                    <div class="movementstype movementstype--withdrawal">0 withdrawal</div>
+                    <div class="movements__date"></div>
+                    <div class="movements__value">000€</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="box1">
+                <div class="heading">
+                    <h2>Interest</h2>
+                </div><br>
+                <div class="sum">
+
+                    <div class="sumrow">
+                        <p class="summary__label">In</p>
+                        <p class="summaryvalue summaryvalue--in">0000 €</p>
+                    </div>
+                    <div class="sumrow">
+                        <p class="summary__label">Out</p>
+                        <p class="summaryvalue summaryvalue--out">0000 €</p>
+                    </div>
+                    <div class="sumrow">
+                        <p class="summary__label">Interest</p>
+                        <p class="summaryvalue summaryvalue--interest">0000 €</p>
+                    </div>
+
+                </div>
+                <button class="btn--sort">&downarrow; SORT</button>
+            </div>
+
+            <div class="box2">
+                <div class="inner-box">
+                    <div class="heading">
+                        <h2>Transfer Money</h2>
+                    </div><br>
+
+                    <form class="form form--transfer">
+                        <div class="trans">
+                            <label class="form__label">Username</label>
+                            <input type="text" class="forminput forminput--to" />
+                        </div>
+                        <div class="trans">
+                            <label class="form__label">Amount</label>
+                            <input type="number" class="forminput forminput--amount" />
+                        </div>
+                    </form>
+                    <button class="formbtn formbtn--transfer">&rarr;</button>
+                </div>
+                <div class="inner-box">
+                    <div class="heading">
+                        <h2>Request Loan</h2>
+                    </div><br>
+
+                    <form class="form form--loan">
+                        <div class="trans">
+                            <label class="formlabel formlabel--loan">Amount</label>
+                            <input type="number" class="forminput forminput--loan-amount" />
+                        </div>
+                    </form>
+                    <button class="formbtn formbtn--loan">&rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-row">
+            <div class="heading">
+                <h2>Close Account</h2>
+            </div><br>
+
+            <form class="form form--close">
+                <input type="text" placeholder="Confirm Username" class="forminput forminput--user" />
+                <input type="password" placeholder="Confirm PIN" maxlength="4" class="forminput forminput--pin" />
+                <button class="login__btn formbtn--close">&rarr;</button>
+                <!-- <label class="form__label">Confirm user</label>
+      <label class="form__label">Confirm PIN</label> -->
+            </form>
+        </div>
+        <div class="footer">
+            You will be logged out in <span class="timer">05:00</span>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
